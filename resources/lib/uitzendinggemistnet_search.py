@@ -17,7 +17,7 @@ import os
 import xbmcgui
 import xbmcplugin
 
-from uitzendinggemistnet_const import LANGUAGE, SETTINGS, convertToUnicodeString, log, getSoup, ADDON, IMAGES_PATH
+from resources.lib.uitzendinggemistnet_const import LANGUAGE, SETTINGS, convertToUnicodeString, log, getSoup, ADDON, IMAGES_PATH
 
 #
 # Main class

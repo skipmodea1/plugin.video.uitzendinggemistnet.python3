@@ -13,7 +13,7 @@ import xbmcgui
 import xbmcplugin
 import os
 
-from uitzendinggemistnet_const import LANGUAGE, IMAGES_PATH
+from resources.lib.uitzendinggemistnet_const import LANGUAGE, IMAGES_PATH
 
 
 #

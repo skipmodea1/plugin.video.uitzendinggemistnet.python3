@@ -17,7 +17,7 @@ import urllib.request, urllib.parse, urllib.error
 import xbmcgui
 import xbmcplugin
 
-from uitzendinggemistnet_const import LANGUAGE, IMAGES_PATH, ADDON, convertToUnicodeString, log, getSoup
+from resources.lib.uitzendinggemistnet_const import LANGUAGE, IMAGES_PATH, ADDON, convertToUnicodeString, log, getSoup
 
 
 #

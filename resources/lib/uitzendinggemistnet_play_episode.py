@@ -16,7 +16,7 @@ import json
 import xbmcgui
 import xbmcplugin
 
-from uitzendinggemistnet_const import LANGUAGE, SETTINGS, convertToUnicodeString, log, getSoup
+from resources.lib.uitzendinggemistnet_const import LANGUAGE, SETTINGS, convertToUnicodeString, log, getSoup
 
 #
 # Main class

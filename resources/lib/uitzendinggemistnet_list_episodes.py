@@ -168,10 +168,9 @@ class Main(object):
             # Add refresh option to context menu
             context_menu_items.append((LANGUAGE(30667), 'Container.Refresh'))
 
-            # Add to list...
-            list_item = xbmcgui.ListItem(title)
-            list_item.setInfo("video", {"title": title, "studio": ADDON, "mediatype": "video",
-                              "plot": plot})
+            # Add to list
+            list_item = xbmcgui.ListItem(label=title)
+            list_item.setInfo("video", {"title": title, "studio": ADDON})
             list_item.setArt({'thumb': thumbnail_url, 'icon': thumbnail_url,
                               'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
             list_item.setProperty('IsPlayable', 'true')
@@ -189,6 +188,7 @@ class Main(object):
 
         # # Next page entry
         # if self.next_page_possible == 'True':
+        #     next_page = self.current_page + 1
         #     thumbnail_url = os.path.join(IMAGES_PATH, 'next-page.png')
         #     list_item = xbmcgui.ListItem(LANGUAGE(30503))
         #     list_item.setArt({'thumb': thumbnail_url, 'icon': thumbnail_url,
@@ -202,10 +202,8 @@ class Main(object):
         #     list_item.addContextMenuItems([('Refresh', 'Container.Refresh')])
         #     # Add our item to the listing as a 3-element tuple.
         #     listing.append((url, list_item, is_folder))
-        #
-        #     log("next url", url)
 
-        # Add our listing to Kodi.
+        # Add our listing to Kodi
         # Large lists and/or slower systems benefit from adding all items at once via addDirectoryItems
         # instead of adding one by ove via addDirectoryItem.
         xbmcplugin.addDirectoryItems(self.plugin_handle, listing, len(listing))

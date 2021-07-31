@@ -6,16 +6,17 @@
 	provider-name="Skipmode A1">
   <requires>
     <import addon="xbmc.python"                     version="3.0.0"/>
-	<import addon="script.module.beautifulsoup4"    version="4.3.2"/>
+    <import addon="script.module.beautifulsoup4"    version="4.3.2"/>
     <import addon="script.module.requests"          version="2.4.3"/>
     <import addon="script.module.future"            version="0.0.1"/>
   	<import addon="script.module.html5lib"          version="0.999.0"/>
-	<import addon="script.module.youtube.dl"        version="0.0.1"/>
+    <import addon="plugin.video.youtube" 		    version="5.1.7" />
   </requires>
-  <extension point="xbmc.python.pluginsource" 	library="addon.py">
-    <provides>video</provides>
-  </extension>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
   <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
 	<summary lang="en_GB">Watch dutch TV episodes of the last 2 weeks</summary>
 	<description lang="en_GB">Watch dutch TV episodes of the last 2 weeks</description>
 	<disclaimer lang="en_GB">For bugs, requests or general questions visit the uitzendinggemistnet thread on the Kodi forum.</disclaimer>
@@ -25,9 +26,12 @@
     <language>nl</language>
     <platform>all</platform>
 	<license>GPL-2.0-or-later</license>
-    <forum>http://forum.xbmc.org/showthread.php?tid=xxxxxx</forum>
-    <website>http://uitzendinggemist.net</website>
-    <source>https://github.com/skipmodea1/plugin.video.uitzendinggemistnet.python3</source>
+    <forum>http://forum.xbmc.org/showthread.php?tid=203211</forum>
+    <website>http://www.pu.nl/</website>
+    <source>https://github.com/skipmodea1/plugin.video.powerunlimited.python3</source>
+    <news>v1.0.0 (2021-07-31)
+    - python 3 version
+    </news>	
     <assets>
       <icon>resources/icon.png</icon>
       <fanart>resources/fanart.jpg</fanart>

@@ -15,7 +15,6 @@ import os
 
 from resources.lib.uitzendinggemistnet_const import LANGUAGE, IMAGES_PATH
 
-
 #
 # Main class
 #
@@ -35,11 +34,11 @@ class Main(object):
                       "show_channel": "False"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30014))
-        list_item.setArt({'thumb': 'DefaultFolder.png', 'icon': 'DefaultFolder.png',
-                          'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         is_folder = True
+        list_item.setArt({'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         list_item.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
+
 
         #
         # uitzendinggemistnet Rtl-5
@@ -49,11 +48,11 @@ class Main(object):
                       "show_channel": "False"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30015))
-        list_item.setArt({'thumb': 'DefaultFolder.png', 'icon': 'DefaultFolder.png',
-                          'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         is_folder = True
+        list_item.setArt({'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         list_item.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
+
 
         #
         # uitzendinggemistnet Rtl-7
@@ -63,11 +62,11 @@ class Main(object):
                       "show_channel": "False"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30017))
-        list_item.setArt({'thumb': 'DefaultFolder.png', 'icon': 'DefaultFolder.png',
-                          'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         is_folder = True
+        list_item.setArt({'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         list_item.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
+
 
         #
         # uitzendinggemistnet Rtl-8
@@ -77,11 +76,11 @@ class Main(object):
                       "show_channel": "False"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30018))
-        list_item.setArt({'thumb': 'DefaultFolder.png', 'icon': 'DefaultFolder.png',
-                          'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         is_folder = True
+        list_item.setArt({'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         list_item.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
+
 
         #
         # Search
@@ -91,11 +90,11 @@ class Main(object):
                       "next_page_possible": "False", "show_channel": "True"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30004))
-        list_item.setArt({'thumb': 'DefaultFolder.png', 'icon': 'DefaultFolder.png',
-                          'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         is_folder = True
+        list_item.setArt({'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         list_item.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
+
 
         #
         # uitzendinggemistnet all tv shows
@@ -105,11 +104,11 @@ class Main(object):
                       "next_page_possible": "False", "show_channel": "False"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30005))
-        list_item.setArt({'thumb': 'DefaultFolder.png', 'icon': 'DefaultFolder.png',
-                          'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         is_folder = True
+        list_item.setArt({'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         list_item.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
+
 
         #
         # uitzendinggemistnet latest videos
@@ -119,11 +118,11 @@ class Main(object):
                       "show_channel": "True"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30001))
-        list_item.setArt({'thumb': 'DefaultFolder.png', 'icon': 'DefaultFolder.png',
-                          'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         is_folder = True
+        list_item.setArt({'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         list_item.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
+
 
         #
         # uitzendinggemistnet popular videos
@@ -133,11 +132,11 @@ class Main(object):
                       "show_channel": "True"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30002))
-        list_item.setArt({'thumb': 'DefaultFolder.png', 'icon': 'DefaultFolder.png',
-                          'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         is_folder = True
+        list_item.setArt({'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
         list_item.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
+
 
         # Disable sorting
         xbmcplugin.addSortMethod(handle=self.plugin_handle, sortMethod=xbmcplugin.SORT_METHOD_NONE)

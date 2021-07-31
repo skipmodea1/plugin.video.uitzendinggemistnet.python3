@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 ADDON = "plugin.video.uitzendinggemistnet"
 SETTINGS = xbmcaddon.Addon(id=ADDON)
 LANGUAGE = SETTINGS.getLocalizedString
-IMAGES_PATH = os.path.join(xbmcaddon.Addon(id=ADDON).getAddonInfo('path'), 'resources')
+IMAGES_PATH = os.path.join(xbmcaddon.Addon(id=ADDON).getAddonInfo('path'), 'resources', 'images')
 DATE = "2019-12-28"
 VERSION = "1.0.0"
 
